@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYVEN Studios - Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/heading-fix.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo" aria-label="RYVEN Studios Home"><img src="./assets/images/ryven-bird-gradient.png" alt=""><span class="logo-type"><strong>RYVEN</strong><small>STUDIOS</small></span></a>
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-cta">
+            <a href="contact.html" class="btn-primary">Start A Project</a>
+        </div>
+    </header>
+
+    <main class="page-content portfolio-page">
+        <section class="portfolio-hero">
+            <div class="portfolio-hero-copy">
+                <span class="portfolio-kicker">SELECTED WORLDS / 2026</span>
+                <h1 class="reveal-text">We Don’t<br>Create Content<br><em>We Build Worlds</em></h1>
+                <p class="reveal-text">A curated collection of AI films, 3D animation, gaming worlds, product CGI, characters and campaigns.</p>
+                <span class="scroll-cue">SCROLL TO EXPLORE ↓</span>
+            </div>
+            <div class="hero-project-stack" id="heroProjectStack">
+                <article><img src="./assets/images/portfolio-gaming-opt.webp" alt="3D gaming world"><span>GAMING / 3D</span></article>
+                <article><img src="./assets/images/portfolio-ai-film-opt.webp" alt="AI cinematic film"><span>AI / CINEMA</span></article>
+                <article><img src="./assets/images/project-watch-opt.webp" alt="3D product film"><span>PRODUCT / CGI</span></article>
+            </div>
+        </section>
+
+        <div class="portfolio-filter-shell">
+            <div class="portfolio-filters" role="group" aria-label="Filter projects">
+                <button class="filter-btn active" type="button" data-filter="all">All Work</button>
+                <button class="filter-btn" type="button" data-filter="ai">AI Video</button>
+                <button class="filter-btn" type="button" data-filter="cinematic">Cinematic</button>
+                <button class="filter-btn" type="button" data-filter="3d">3D Animation</button>
+                <button class="filter-btn" type="button" data-filter="gaming">Gaming</button>
+                <button class="filter-btn" type="button" data-filter="product">Product</button>
+                <button class="filter-btn" type="button" data-filter="vertical">Vertical</button>
+            </div>
+        </div>
+
+        <section class="portfolio-spotlight" id="project-neon-genesis">
+            <video autoplay muted loop playsinline poster="./assets/images/portfolio-ai-film-opt.webp">
+                <source src="./assets/videos/about-reel.mp4" type="video/mp4">
+            </video>
+            <div class="spotlight-overlay">
+                <span>FEATURED PROJECT / AI CINEMATIC</span>
+                <h2>Neon Genesis</h2>
+                <p>A surreal brand world developed through AI direction, cinematic editing, VFX and original sound design.</p>
+                <div><b>AI DIRECTION</b><b>VFX</b><b>EDITING</b><b>4K DELIVERY</b></div>
+                <button class="project-open btn-primary" type="button" data-project="Neon Genesis" data-media="./assets/videos/about-reel.mp4">View Case Study</button>
+            </div>
+        </section>
+
+        <section class="portfolio-gallery-section">
+            <div class="portfolio-section-heading">
+                <span class="portfolio-kicker">EXPLORE THE WORK</span>
+                <h2>Projects Without Boundaries</h2>
+            </div>
+            <div class="editorial-project-grid">
+                <article class="portfolio-item project-card project-card--hero tilt-card" data-category="gaming 3d cinematic">
+                    <img src="./assets/images/portfolio-gaming-opt.webp" alt="Original 3D gaming animation">
+                    <video muted loop playsinline poster="./assets/images/portfolio-gaming-opt.webp"><source src="./assets/videos/about-reel.mp4" type="video/mp4"></video>
+                    <div><span>3D GAMING ANIMATION</span><h3>Echo Frontier</h3><button class="project-open" data-project="Echo Frontier" data-media="./assets/images/portfolio-gaming-opt.webp">↗</button></div>
+                </article>
+                <article class="portfolio-item project-card project-card--tall tilt-card" data-category="ai cinematic vertical">
+                    <img src="./assets/images/portfolio-ai-film-opt.webp" alt="AI fashion film">
+                    <div><span>AI CINEMATIC FILM</span><h3>Electric Muse</h3><button class="project-open" data-project="Electric Muse" data-media="./assets/images/portfolio-ai-film-opt.webp">↗</button></div>
+                </article>
+                <article class="portfolio-item project-card tilt-card" data-category="product 3d" id="project-precision">
+                    <img src="./assets/images/project-watch-opt.webp" alt="Luxury watch CGI">
+                    <video muted loop playsinline poster="./assets/images/project-watch-opt.webp"><source src="./assets/videos/watch-motion.mp4" type="video/mp4"></video>
+                    <div><span>3D PRODUCT CGI</span><h3>Precision</h3><button class="project-open" data-project="Precision" data-media="./assets/videos/watch-motion.mp4">↗</button></div>
+                </article>
+                <article class="portfolio-item project-card project-card--wide tilt-card" data-category="cinematic 3d">
+                    <img src="./assets/images/project-car-opt.webp" alt="Automotive cinematic animation">
+                    <video muted loop playsinline poster="./assets/images/project-car-opt.webp"><source src="./assets/videos/about-reel.mp4" type="video/mp4"></video>
+                    <div><span>AUTOMOTIVE / CINEMA</span><h3>Hyper Drive</h3><button class="project-open" data-project="Hyper Drive" data-media="./assets/videos/about-reel.mp4">↗</button></div>
+                </article>
+                <article class="portfolio-item project-card project-card--tall tilt-card" data-category="product ai vertical" id="project-aura-skincare">
+                    <img src="./assets/images/project-aura-opt.webp" alt="Aura Skincare vertical campaign">
+                    <video muted loop playsinline poster="./assets/images/project-aura-opt.webp"><source src="./assets/videos/aura-motion.mp4" type="video/mp4"></video>
+                    <div><span>BEAUTY / VERTICAL</span><h3>Aura Skincare</h3><button class="project-open" data-project="Aura Skincare" data-media="./assets/videos/aura-motion.mp4">↗</button></div>
+                </article>
+                <article class="portfolio-item project-card tilt-card" data-category="3d product cinematic">
+                    <img src="./assets/images/camera-render-opt.webp" alt="Camera product visualization">
+                    <div><span>PRODUCT VISUALIZATION</span><h3>Final Render</h3><button class="project-open" data-project="Final Render" data-media="./assets/images/camera-render-opt.webp">↗</button></div>
+                </article>
+                <article class="portfolio-item project-card project-card--wide tilt-card" data-category="3d ai cinematic">
+                    <img src="./assets/images/services-characters-opt.webp" alt="3D character animation">
+                    <div><span>CHARACTER ANIMATION</span><h3>Beyond the Frame</h3><button class="project-open" data-project="Beyond the Frame" data-media="./assets/images/services-characters-opt.webp">↗</button></div>
+                </article>
+                <article class="portfolio-item project-card tilt-card" data-category="ai vertical">
+                    <img src="./assets/images/teamwork-hover-opt.webp" alt="AI studio campaign">
+                    <div><span>AI BRAND STORY</span><h3>Human Signal</h3><button class="project-open" data-project="Human Signal" data-media="./assets/images/teamwork-hover-opt.webp">↗</button></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="interactive-stack-section">
+            <div class="stack-copy">
+                <span class="portfolio-kicker">INTERACTIVE COLLECTION</span>
+                <h2>Choose a World</h2>
+                <p>Move through layered projects and bring any world to the front.</p>
+                <div class="stack-controls">
+                    <button type="button" data-stack-index="0">Gaming</button>
+                    <button type="button" data-stack-index="1">AI Film</button>
+                    <button type="button" data-stack-index="2">Product CGI</button>
+                </div>
+            </div>
+            <div class="interactive-project-stack" id="interactiveProjectStack">
+                <article><img src="./assets/images/portfolio-gaming-opt.webp" alt="Gaming world"><span>GAMING / ECHO FRONTIER</span></article>
+                <article><img src="./assets/images/portfolio-ai-film-opt.webp" alt="AI film world"><span>AI FILM / ELECTRIC MUSE</span></article>
+                <article><img src="./assets/images/project-watch-opt.webp" alt="Product CGI world"><span>PRODUCT / PRECISION</span></article>
+            </div>
+        </section>
+
+        <div class="project-modal" id="projectModal" aria-hidden="true">
+            <div class="project-modal-backdrop" data-close-modal></div>
+            <article>
+                <button class="modal-close" type="button" data-close-modal aria-label="Close project">×</button>
+                <div class="modal-media" id="modalMedia"></div>
+                <span>RYVEN STUDIOS / CASE STUDY</span>
+                <h2 id="modalTitle">Project</h2>
+                <p>Creative direction, AI/3D production, cinematic edit, sound design and multi-format delivery combined into one focused visual experience.</p>
+                <div class="modal-tags"><b>CREATIVE DIRECTION</b><b>AI / 3D</b><b>EDITING</b><b>DELIVERY</b></div>
+                <a href="contact.html" class="btn-primary">Create Something Similar</a>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>Pioneering the future of cinematic storytelling through the seamless integration of artificial intelligence and human creativity.</p>
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-socials" aria-label="Social media">
+                <a href="https://www.facebook.com/Ryvenstudios/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="assets/logos/facebook.svg" alt=""></a>
+                <a href="https://www.instagram.com/ryvenstudiosofficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/logos/instagram.svg" alt=""></a>
+                <a href="#" aria-label="YouTube"><img src="assets/logos/youtube.svg" alt=""></a>
+                <a href="#" aria-label="LinkedIn"><img src="assets/logos/linkedin.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-contact-line">
+            <a href="mailto:hello@ryvenstudios.com">hello@ryvenstudios.com</a>
+            <span aria-hidden="true"></span>
+            <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer">WhatsApp: +92 300 1234567</a>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 RYVEN STUDIOS. ALL RIGHTS RESERVED.</span>
+            <span>DESIGNED FOR THE FUTURE OF AI PRODUCTION</span>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
