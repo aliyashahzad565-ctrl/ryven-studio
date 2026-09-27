@@ -1,0 +1,112 @@
+/* RYVEN display-heading spacing and glyph safety */
+.about-hero-copy,
+.services-hero-copy,
+.portfolio-hero-copy,
+.story-container > div,
+.creative-signal-copy,
+.pulse-heading,
+.services-heading,
+.featured-service-copy,
+.portfolio-section-heading,
+.about-section-heading {
+    min-width:0;
+    overflow:visible;
+}
+
+.about-hero-copy h1,
+.services-hero-copy h1,
+.portfolio-hero-copy h1,
+.about-story-section h2,
+.creative-signal-copy h2,
+.pulse-heading h2,
+.services-heading h2,
+.featured-service-copy h2,
+.portfolio-section-heading h2,
+.about-section-heading h2,
+.services-final-cta h2,
+.portfolio-final-cta h2 {
+    box-sizing:content-box;
+    width:100%;
+    max-width:100%;
+    padding:.08em .13em .16em .035em;
+    margin-left:-.035em;
+    margin-right:-.13em;
+    overflow:visible;
+    white-space:normal;
+    overflow-wrap:normal;
+    word-break:normal;
+    hyphens:none;
+}
+
+.hero-pop-title .pop-word,
+.creative-signal-copy h2 em,
+.pulse-heading h2 em,
+.portfolio-hero-copy h1 em,
+.services-hero-copy h1 em {
+    display:inline-block;
+    line-height:1.08;
+    padding-right:.075em;
+    padding-bottom:.18em;
+    margin-right:-.075em;
+    margin-bottom:-.18em;
+    overflow:visible;
+}
+
+.creative-signal-copy h2,
+.pulse-heading h2 { line-height:.92; }
+.about-story-section h2 { line-height:.96; }
+
+@media (max-width:900px) {
+    .about-hero-copy h1,
+    .services-hero-copy h1,
+    .portfolio-hero-copy h1,
+    .about-story-section h2,
+    .creative-signal-copy h2,
+    .pulse-heading h2,
+    .services-heading h2,
+    .featured-service-copy h2,
+    .portfolio-section-heading h2 {
+        padding-right:.1em;
+        margin-right:-.1em;
+        line-height:1;
+    }
+}
+
+/* The Services hero's last two words cannot share one line safely on narrow
+   screens. Give Possibility its own line instead of allowing its final y to
+   leave the viewport. */
+@media (max-width:700px) {
+    .services-hero-copy .pop-word[style*="--word:3"] {
+        display:block;
+        width:max-content;
+        max-width:100%;
+        margin-top:.02em;
+    }
+}
+
+/* Leadership cards keep their full border and copy visible during hover. */
+.ceo-section,
+.leadership-grid {
+    overflow:visible;
+}
+
+.leadership-grid {
+    padding:24px;
+    margin:-24px;
+}
+
+.leadership-card {
+    max-width:100%;
+    transform-origin:center center;
+}
+
+@media (max-width:900px) {
+    .leadership-grid {
+        padding:14px 20px;
+        margin:-14px -20px;
+    }
+
+    .leadership-card {
+        width:100%;
+    }
+}
